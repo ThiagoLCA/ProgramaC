@@ -111,7 +111,7 @@ int main() {
     printf("Estado: %c\n", estado1);
     printf("Codigo: %s\n", codigo1);
     printf("Nome da Cidade: %s \n", cidade1);
-    printf("Populacao: %d\n", populacao1);
+    printf("Populacao: %lu\n", populacao1);
     printf("Area: %.2f km²\n", area1);
     printf("PIB: %.2f bilhoes de reais\n", pib1);
     printf("Numero de Pontos Turisticos: %d\n", pontos1);
@@ -122,7 +122,7 @@ int main() {
     printf("Estado: %c\n", estado2);
     printf("Codigo: %s\n", codigo2);
     printf("Nome da Cidade: %s", cidade2);
-    printf("Populacao: %d\n", populacao2);
+    printf("Populacao: %lu\n", populacao2);
     printf("Area: %.2f km²\n", area2);
     printf("PIB: %.2f bilhoes de reais\n", pib2);
     printf("Numero de Pontos Turisticos: %d\n", pontos2);
@@ -136,7 +136,7 @@ int main() {
 /* ===== COMPARAÇÃO ===== */
     printf("\nComparacao de Cartas:\n\n");
 
-    printf("Populacao: Carta 1 venceu (%d)\n", populacao1 > populacao2);
+    printf("Populacao: Carta 1 venceu %lu\n", populacao1 > populacao2);
     printf("Area: Carta 1 venceu (%d)\n", area1 > area2);
     printf("PIB: Carta 1 venceu (%d)\n", pib1 > pib2);
     printf("Pontos Turisticos: Carta 1 venceu (%d)\n", pontos1 > pontos2);
@@ -147,6 +147,13 @@ int main() {
     printf("PIB per Capita: Carta 1 venceu (%d)\n", pibpercapita1 > pibpercapita2);
     printf("Super Poder: Carta 1 venceu (%d)\n", superpoder1 > superpoder2);
 
+    if (populacao1 > populacao2){
+    printf ("Carta 1 Venceu na População!! \n");
+
+    } else {
+    printf ("Carta 2 Venceu na população! \n"); 
+
+    }
 
     return 0;
 }
